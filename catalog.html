@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>catalog.html</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -40,6 +40,30 @@
                    <section class="catalog-hotels">
                    <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
                    <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get"></form>
+                   <fieldset class="catalog-filter-group">
+                       <legend class="catalog-filter-title">Инфраструктура:</legend>
+                       <ul class="catalog-filter-list">
+                           <li class="catalog-filter-item">
+                            <label class="control">
+                                <input class="control-input" type="checkbox" name="swimming-pool">
+                                Бассейн
+                            </label> 
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="parking">
+                                    Парковка
+                                </label>
+                                <li class="catalog-filter-item">
+                                    <label class="control">
+                                        <input class="control-input" type="checkbox" name="Wi-Fi">
+                                        Wi-Fi
+                                    </label>
+                                </li>
+                            </ul>
+                   </fieldset>
+
+                           </li>
+                       </ul>
                 </section>
                 
                 <div class="buttons">
