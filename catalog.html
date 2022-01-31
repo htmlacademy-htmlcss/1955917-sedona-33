@@ -39,7 +39,7 @@
                 </ul>
                    <section class="catalog-hotels">
                    <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-                   <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get"></form>
+                   <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
                    <fieldset class="catalog-filter-group">
                        <legend class="catalog-filter-title">Инфраструктура:</legend>
                        <ul class="catalog-filter-list">
@@ -84,8 +84,12 @@
                         </li>
                        </ul>
                    </fieldset>
+                   <!-- вариация цены позже при помощи js? -->
+                   <button class="button" type="submit">Показать</button>
+                   <input type="reset" value="Сбросить">
+                </form>
                 </section>
-                
+                <h2>НАЙДЕНО ГОСТИНИЦ:</h2>
                 <div class="buttons">
                     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                     <input type="email" id="email" name="email" placeholder="Ваш e-mail">
