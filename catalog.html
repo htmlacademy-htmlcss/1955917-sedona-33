@@ -7,14 +7,14 @@
   </head>
   <body>
       <header>
-        <a href="#">
+        <a href="index.html">
             <img src="" alt="Логотип"> 
           </a>
             <nav>
               <ul class="nav-list">
-                <li><a href="#">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="#">О Седоне</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
+                <li><a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a></li>
               </ul>
             </nav>
           <div class="help">
@@ -24,9 +24,44 @@
                 <a href="#">Хочу сюда!</a>
               </nav>
             </div>
-            <main>
+        </header>  
+            <main class="main-inner">
+                <header>
                 <h1>Гостиницы Седоны</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link" href="index.html">Главная</a>
+                        <!-- Пока что главная, а в css заменю на значок -->
+                    </li>
+                   <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link">Гостиницы</a>
+                   </li>>
+                </ul>
+                   <section class="catalog-hotels">
+                   <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+                   <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get"></form>
+                </section>
                 
+                <div class="buttons">
+                    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                    <input type="submit" value="Подписаться">
+                  </form>
+                </div>
+                </header>
             </main>
-      </header>
+     
+      <footer>
+        <div class="social-network">
+        <nav>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Youtube</a>
+        </nav>
+      </div>
+    <p><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
+    <nav>
+    <a href="https://htmlacademy.ru/study">.html academy</a>
+    </nav>
+    </footer>
   </body>
