@@ -84,13 +84,30 @@
                         </li>
                        </ul>
                    </fieldset>
-                   <!-- вариация цены позже при помощи js? -->
+                   <fieldset class="filter-price">
+                     <legend>Стоимость,₽:</legend>
+                     <div class="range">
+                       <div class="range-field">
+                         <label for="range1">от</label>
+                         <input type="text" id="range1">
+                       </div>
+                       <div class="range-field">
+                         <label for="range2">до</label>
+                         <input type="text" id="range2">
+                       </div>
+                     </div>
+                     <div class="range-bar">
+                       <div class="range-scale">Шкала</div> 
+                       <button class="range-btn range-btn-from" type="button">от</button>
+                       <button class="range-btn range-btn-to" type="button">до</button>
+                     </div>
                    <button class="button" type="submit">Применить</button>
                    <input type="reset" value="Сбросить">
+                   </fieldset>
                 </form>
                 </section>
             </header>
-                <h2>НАЙДЕНО ГОСТИНИЦ:</h2>
+                <div class="hotel-sort-tittle">НАЙДЕНО ГОСТИНИЦ:38</div>
                 <select class="select-control" aria-label="Сортировка">
                     <option value="popular">Сначала популярное</option>
                     <option value="cheap">Сначала дешёвое</option>
