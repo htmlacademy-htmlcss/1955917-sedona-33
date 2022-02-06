@@ -12,12 +12,12 @@
   <header class="page-header">
     <nav>
       <a class="logo">
-        <img src="" alt="Логотип">
+        <img src="" alt="Логотип" href="index.html">
       </a>
       <ul class="nav-list-first">
         <li><a href="index.html" class="main-page">Главная</a></li>
         <li><a href="#" class="about">О Седоне</a></li>
-        <li><a class="hotels">Гостиницы</a></li>
+        <li><a class="navigation-link-current hotels">Гостиницы</a></li>
       </ul>
       <ul class="nav-list-second">
         <a href="#" class="search">Поиск</a>
@@ -199,13 +199,25 @@
       </li>
     </ul>
     <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-    <ul class="page-number">
-      <li><a class="disabled">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">...</a></li>
-      <li><a href="#">10</a></li>
+    <ul class="pagination">
+      <li class="pagination-item">
+        <a class="pagination-link pagination-current">1</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">2</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">3</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">4</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">...</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">10</a>
+      </li>
     </ul>
     <p>Гостиниц на странице:</p>
     <select class="number-of-hotels">
