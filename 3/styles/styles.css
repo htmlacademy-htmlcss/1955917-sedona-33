@@ -48,5 +48,11 @@ body {
 }
 
 .main-index {
-background-image: url("images/background.jpg")
+    background-image: 
+    url(/images/background/index-background.jpg) ,
+    url(/images/divider.svg);
+    background-size: 1200px, 485px, 1200px, 57px;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    color: #000000;
 }
