@@ -56,3 +56,12 @@ body {
     text-transform: uppercase;
     color: #000000;
 }
+
+.review {
+    font-family: "PT Sans", "Arial", sans-serif; 
+    font-size: 22px;
+    font-weight: normal;  
+    text-align: center;
+    line-height: 36px;
+    color: #333333;
+}
