@@ -16,8 +16,8 @@
 
 body {
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 21px;
     color: #000000;
     background-color: #f2f2f2;
 }
@@ -47,58 +47,4 @@ body {
     color: #000000;
 }
 
-.headline {
-    background-image: url(images/background/index-background.jpg);
-    background-repeat: no-repeat;
-    background-size: 1200px, 485px;
-    background-position: absolute;
-}
 
-.first-screen {
-    background: #ffffff;
-    background-image: url(images/divider.svg);
-    width: 1200px;
-    height:57px;
-    position: absolute;
-}
-
-.represent {
-    font-family: "PT Sans", "Arial", sans-serif; 
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.review {
-    font-family: "PT Sans", "Arial", sans-serif; 
-    font-size: 22px;
-    font-weight: normal;  
-    text-align: center;
-    line-height: 36px;
-    color: #333333;
-}
-
-.reason.dark {
-    background-color: #83B3D3;
-    background-position: absolute;
-    background-size: 400px, 384px;
-}
-
-.h2 {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 24px;
-    font-weight: bold;  
-    text-align: center;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.bridge {
-    position: absolute;
-    left: 440px;
-    top: 832px;
-}
