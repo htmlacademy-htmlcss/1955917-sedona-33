@@ -50,8 +50,7 @@ body {
 .headline {
     background-image: url(images/background/index-background.jpg);
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 485px;
+    background-size: 1200px, 485px;
     background-position: absolute;
 }
 
