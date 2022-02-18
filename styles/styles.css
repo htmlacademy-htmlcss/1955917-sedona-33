@@ -16,8 +16,8 @@
 
 body {
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 21px;
     color: #000000;
     background-color: #f2f2f2;
 }
@@ -82,12 +82,17 @@ body {
 }
 
 .reason.dark {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
     background-color: #83B3D3;
     background-position: absolute;
     background-size: 400px, 384px;
 }
 
-.h2 {
+.reasons-with-picture {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 24px;
     font-weight: bold;  
@@ -97,8 +102,3 @@ body {
     color: #ffffff;
 }
 
-.bridge {
-    position: absolute;
-    left: 440px;
-    top: 832px;
-}
