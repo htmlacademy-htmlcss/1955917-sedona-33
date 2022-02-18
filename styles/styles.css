@@ -34,6 +34,8 @@ body {
     text-align: center;
     line-height: 26px;
     text-decoration: none;
+    color: #000000;
+    background-color: #f2f2f2;
 }
 
 .navigation-link-current {
@@ -43,6 +45,8 @@ body {
     text-align: center;
     line-height: 26px;
     text-decoration: none;
+    color: #000000;
+    background-color: #f2f2f2;
 }
 
 .headline {
