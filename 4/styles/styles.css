@@ -45,3 +45,18 @@ body {
     text-decoration: none;
 }
 
+.headline {
+    background-image: url(images/background/index-background.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
+    background-position: absolute;
+}
+
+.first-screen {
+    background: #ffffff;
+    background-image: url(images/divider.svg);
+    width: 1200px;
+    height:57px;
+    position: absolute;
+}
