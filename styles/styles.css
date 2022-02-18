@@ -67,3 +67,9 @@ body {
     color: #333333;
 }
 
+.first-screen {
+    background-image: url(images/background/index-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px, 485px;
+    background-position: absolute;
+}
