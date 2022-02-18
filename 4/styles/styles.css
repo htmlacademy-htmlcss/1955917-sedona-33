@@ -47,4 +47,12 @@ body {
     color: #000000;
 }
 
-
+.represent {
+    font-family: "PT Sans", "Arial", sans-serif; 
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
