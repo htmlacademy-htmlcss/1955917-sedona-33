@@ -96,3 +96,9 @@ body {
     text-transform: uppercase;
     color: #ffffff;
 }
+
+.bridge {
+    position: absolute;
+    left: 440px;
+    top: 832px;
+}
