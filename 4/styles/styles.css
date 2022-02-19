@@ -57,6 +57,8 @@ body {
     content: url(../images/icons/favorite.svg);
 }
 
+/* Headline */
+
 .represent {
     font-family: "PT Sans", "Arial", sans-serif; 
     font-size: 30px;
@@ -90,6 +92,8 @@ body {
     margin: auto;
     display: block;
 }
+
+/* Reasons */
 
 .reason.dark {
     background: #83B3D3;
@@ -225,7 +229,7 @@ body {
 }
 
 
-/* Подвал */
+/* Footer */
 .twitter::before {
     content: url(../images/footer/twitter.svg);
 }
@@ -252,7 +256,7 @@ body {
     height:120px;
 }
 
-/* Каталог */
+/* Catalog */
 
 /* Page-footer */
 
