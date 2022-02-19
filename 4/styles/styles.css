@@ -22,6 +22,8 @@ body {
     background-color: #f2f2f2;
 }
 
+/* Я сделала немножко больше, чем нужно было */
+
 .page-header {
     color: #000000;
     background-color: #f2f2f2;
@@ -63,7 +65,7 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
-    word-break: break-word;
+    display: block;
 }
 
 .review {
@@ -134,6 +136,8 @@ body {
     font-weight: normal;
 }
 
+/* Sub-reasons*/
+
 .sub-reasons-item.house::before {
     content: url(../images/sub-reasons/house.svg);
 }
@@ -155,6 +159,8 @@ body {
     text-transform: uppercase;
     color: #000000;
 }
+
+/* Subcribe */
 
 .interest {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -188,7 +194,7 @@ body {
     background: #756257;
 }
 /* Пока что думаю будет лучше оставить кнопку так? только дисплей помогает 
-сделать текст по середине, где он есть*/
+сделать текст по середине*/
 
 .newsletter {
     background-image: url(../images/background/background.jpg);
@@ -219,39 +225,7 @@ body {
 }
 
 
-/* Не работает, бред
-.newsletter-form {
-    position: ;
-   width: 600px;
-    height: 60px;
-    top: 3041px;
-    left: 840px;
-    background: #F2F2F2;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.email {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.submit-button {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #83B3D3;
-}
-*/
-
+/* Подвал */
 .twitter::before {
     content: url(../images/footer/twitter.svg);
 }
@@ -276,4 +250,226 @@ body {
     text-transform: uppercase;
     width:1200px;
     height:120px;
+}
+
+/* Каталог */
+
+/* Page-footer */
+
+.page-footer {
+    background-image: url(../images/background/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hotels-of-Sedona {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link.home::before {
+    content: url(../images/icons/home.svg);
+}
+
+.breadcrumbs-item {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.catalog-filter-group {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.control {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.range-field {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.button-use {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    background: #83B3D3;
+}
+
+/* Что с ней не так :`) */
+.button-reset {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+    text-align: center;  
+    color: #FFFFFF;
+}
+
+/* Catalog-beginning*/
+
+
+/* Control-input */
+
+.control-input-cards::before {
+    content: url(../images/icons/mode-tile-1.svg);
+}
+
+.control-input-main::before {
+    content: url(../images/icons/mode-tile-2.svg);
+}
+
+.control-input-list::before {
+    content: url(../images/icons/mode-list-3.svg);
+}
+
+
+.star::before {
+    content: url(../images/icons/star.svg);
+}
+
+/* Hotels */
+
+.hotel-sort-tittle {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.select-control {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+.product-card-link {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.product-card-name {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+
+.product-card-price {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+.product-card-button.detail {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #756257;
+    text-decoration: none;
+}
+
+/* Здесь кнопка должна меняться на зеленую при нажатии, пока что оставлю так*/
+
+.product-card-button.favorites {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-decoration: none;
+}
+
+.rating {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.number-of-hotels {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+    /* Pagination*/
+
+.pagination-show-more {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    background: #83B3D3;
+}
+
+.pagination-link.pagination-current {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.pagination-link {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-decoration: none ;
 }
