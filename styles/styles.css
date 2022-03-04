@@ -21,10 +21,10 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
     max-width: 1200px;
     min-height: 100%;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -99,8 +99,9 @@ body {
     background-color: #f2f2f2;
 }
 
+
 .navigation-link {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -110,7 +111,7 @@ body {
 }
 
 .navigation-link-current {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -120,17 +121,26 @@ body {
 }
 
 .navigation-link.search::before {
-    content: url(../images/icons/search.svg);
+    content: ""; 
+    background-image: url(../images/icons/search.svg);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 66px;
+    display: block;
 }
 
 .navigation-link.favorites::before {
-    content: url(../images/icons/favorite.svg);
+    content: ""; 
+    background-image: url(../images/icons/favorite.svg);
+    width: 42px;
+    height: 66px;
+    display: block;
 }
 
 /* Headline */
 
 .represent {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -141,7 +151,7 @@ body {
 }
 
 .review {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     font-size: 22px;
     font-weight: 700;  
     text-align: center;
@@ -154,8 +164,11 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-size: 100%, cover;
     background-position: bottom, center;
-    width: 100%;
+    max-width: 1200px;
     height: 485px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headline {
@@ -167,10 +180,29 @@ body {
 
 .reason.dark {
     background: #83B3D3;
+    width: 400px;
+    height: 384px;
+}
+
+.reason-one {
+    display: block;
+}
+
+.reasons-list{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.reasons-list-item {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .reasons-with-picture {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     color: #FFFFFF;
     font-weight: bold;
     font-size: 24px;
@@ -180,7 +212,7 @@ body {
 }
 
 .number-white {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     font-weight: normal;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -189,7 +221,7 @@ body {
 }
 
 .number-black {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     font-weight: normal;
     text-transform: uppercase;
     display: block;
@@ -197,16 +229,21 @@ body {
 }
 
 .reason-white {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     font-weight: normal;
     text-align: center;
     color: #FFFFFF;
 }
 
 .reason-black {
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-family: "PT Sans", Arial, sans-serif; 
     text-align: center;
     font-weight: normal;
+}
+
+.reason {
+    width: 400px;
+    height: 384px;
 }
 
 
@@ -215,40 +252,65 @@ body {
 .sub-reasons-list {
     display: flex;
     justify-content: space-around;
-    margin: 0;
-    padding: 0;
 }
 
 .sub-reasons-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 384px;
     width: 400px;
 }
 
+
 .sub-reasons-item.house::before {
-    content: url(../images/sub-reasons/house.svg);
+    content: "";
+    background-image: url(../images/sub-reasons/house.svg);
+    width: 75px;
+    height: 72px;
+    display: block;
 }
 
 .sub-reasons-item.food::before {
-    content: url(../images/sub-reasons/food.svg);
+    content: "";
+    background-image: url(../images/sub-reasons/food.svg);
+    width: 74px;
+    height: 70px;
+    display: block;
 }
 
 .sub-reasons-item.souvenir::before {
-    content: url(../images/sub-reasons/present.svg);
+    content: "";
+    background-image: url(../images/sub-reasons/present.svg);
+    width: 64px;
+    height: 76px;
+    display: block;
+}
+
+.recommendation{
+    width: 250px;
+    height: 73px;
+    padding: 0 75px 79px 75px;
 }
 
 .bold-reasons {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    width: 250px;
+    height: 28px;
+    padding: 23px 75px 20px 75px;
 }
 
 /* Subcribe */
 
 .interest {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold; 
     font-size: 30px;
     line-height: 36px;
@@ -259,7 +321,7 @@ body {
 }
 
 .info {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
@@ -267,7 +329,7 @@ body {
 }
 
 .search-button {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 36px;
@@ -291,7 +353,7 @@ body {
 }
 
 .subcribe {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -301,7 +363,7 @@ body {
 }
 
 .under-subcribe {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 22px;
     text-align: center;
@@ -311,20 +373,33 @@ body {
 
 
 /* Footer */
+
 .twitter::before {
-    content: url(../images/footer/twitter.svg);
+    content: "";
+    background-image: url(../images/footer/twitter.svg);
+    width: 18px;
+    height: 15px;
+    display: block;
 }
 
 .facebook::before {
-    content: url(../images/footer/facebook.svg);
+    content: "";
+    background-image: url(../images/footer/facebook.svg); 
+    width: 10px;
+    height: 18px;
+    display: block;
 }
 
 .youtube::before {
-    content: url(../images/footer/youtube.svg);
+    content: "";
+    background-image: url(../images/footer/youtube.svg);
+    width: 20px;
+    height: 16px;
+    display: block;
 }
 
 .number {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 40px;
     line-height: 40px;
@@ -349,7 +424,7 @@ body {
 }
 
 .hotels-of-Sedona {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 60px;
     line-height: 78px;
@@ -361,7 +436,7 @@ body {
 }
 
 .breadcrumbs-item {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 21px;
@@ -369,7 +444,7 @@ body {
 }
 
 .catalog-filter-group {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
@@ -377,7 +452,7 @@ body {
 }
 
 .control {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
@@ -385,7 +460,7 @@ body {
 }
 
 .range-field {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
     color: #FFFFFF;
@@ -393,7 +468,7 @@ body {
 }
 
 .button-use {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 16px;
     display: flex;
@@ -406,7 +481,7 @@ body {
 
 /* Что с ней не так :`) */
 .button-reset {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
     text-align: center;  
@@ -438,7 +513,7 @@ body {
 /* Hotels */
 
 .hotel-sort-tittle {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 39px;
@@ -451,7 +526,7 @@ body {
 }
 
 .select-control {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
     width: 287px;
@@ -467,7 +542,7 @@ body {
 }
 
 .product-card-link {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -478,20 +553,20 @@ body {
 }
 
 .product-card-name {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
 }
 
 
 .product-card-price {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
 }
 
 .product-card-button.detail {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -505,7 +580,7 @@ body {
 /* Здесь кнопка должна меняться на зеленую при нажатии, пока что оставлю так*/
 
 .product-card-button.favorites {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -517,7 +592,7 @@ body {
 }
 
 .rating {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     text-align: center;
@@ -525,7 +600,7 @@ body {
 }
 
 .number-of-hotels {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
@@ -534,7 +609,7 @@ body {
     /* Pagination*/
 
 .pagination-show-more {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
@@ -548,7 +623,7 @@ body {
 }
 
 .pagination-link.pagination-current {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
@@ -561,7 +636,7 @@ body {
 }
 
 .pagination-link {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
