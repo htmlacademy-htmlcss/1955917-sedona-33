@@ -38,27 +38,29 @@ body {
  }
 
  .navigation {
-     display: flex;
      margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
  }
 
  .logo {
-     margin-right: auto;
+     display: flex;
      width: 139px;
-     margin-left: 70px;
-     margin-right: 30px;
+     padding: 0 47px 0 70px;
+     margin-top: -60px;
  }
 
  .navavigation-list {
     margin: 0;
     padding: 0;
-    width: 450px;
+    width: 345px;
+    display: flex;
  }
 
 .navavigation-user {
     max-width: 300px;
-    margin-left: auto;
-    margin-right: 70px;
+    display: flex;
 }
 
 /* Я не знаю правильно ли, но задаю здесь 100%,ибо если брать по макету 1200px,
@@ -148,15 +150,17 @@ body {
     text-transform: uppercase;
     color: #000000;
     display: block;
+    padding: 63px 240px 31px 240px;
 }
 
 .review {
     font-family: "PT Sans", Arial, sans-serif; 
     font-size: 22px;
-    font-weight: 700;  
+    font-weight: 400;  
     text-align: center;
     line-height: 36px;
     color: #333333;
+    padding:0px 240px 80px 240px;
 }
 
 .sub-first-screen {
@@ -210,6 +214,10 @@ body {
     line-height: 28px;  
     text-align: center;
     text-transform: uppercase; 
+    padding-top: 97px;
+    padding-bottom: 30px;
+    width: 171px;
+    margin: 0 auto;
 }
 
 .number-white {
@@ -219,6 +227,7 @@ body {
     color: #FFFFFF;
     display: block;
     text-align: center;
+    padding: 0 75px 30px 75px;
 }
 
 .number-black {
@@ -227,6 +236,7 @@ body {
     text-transform: uppercase;
     display: block;
     text-align: center;
+    padding: 0 75px 30px;
 }
 
 .reason-white {
@@ -234,12 +244,16 @@ body {
     font-weight: normal;
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
+    padding: 0 90px 87px 90px;
 }
 
 .reason-black {
     font-family: "PT Sans", Arial, sans-serif; 
     text-align: center;
     font-weight: normal;
+    padding: 0 75px 108px;
+    margin: 0;
 }
 
 .reason {
@@ -247,12 +261,25 @@ body {
     height: 384px;
 }
 
+.last-reasons {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 98px 0 29px;
+    width: 180px;
+    margin: 0 auto;
+}
 
 /* Sub-reasons*/
 
 .sub-reasons-list {
     display: flex;
     justify-content: space-around;
+    padding: 0;
 }
 
 .sub-reasons-item {
@@ -271,6 +298,7 @@ body {
     width: 75px;
     height: 72px;
     display: block;
+    margin-top: 89px;
 }
 
 .sub-reasons-item.food::before {
@@ -279,6 +307,7 @@ body {
     width: 74px;
     height: 70px;
     display: block;
+    margin-top: 91px;
 }
 
 .sub-reasons-item.souvenir::before {
@@ -287,12 +316,14 @@ body {
     width: 64px;
     height: 76px;
     display: block;
+    margin-top: 85px;
 }
 
 .recommendation{
     width: 250px;
     height: 73px;
-    padding: 0 75px 79px 75px;
+    padding: 20px 75px 79px 75px;
+    margin: 0;
 }
 
 .bold-reasons {
@@ -305,8 +336,11 @@ body {
     color: #000000;
     width: 250px;
     height: 28px;
-    padding: 23px 75px 20px 75px;
+    margin: 0;
+    padding: 23px 75px 0;
 }
+
+
 
 /* Subcribe */
 
@@ -319,6 +353,7 @@ body {
     display: block;
     text-align: center;
     text-transform: uppercase;
+    padding: 91px 240px 29px;
 }
 
 .info {
@@ -327,6 +362,8 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    padding: 0px 240px 56px;
+    margin: 0;
 }
 
 .search-button {
@@ -340,9 +377,10 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background: #756257;
+    margin: 0 313px 93px;
+    padding: 15px 0 15px;
+    border-radius: 10px;
 }
-/* Пока что думаю будет лучше оставить кнопку так? только дисплей помогает 
-сделать текст по середине*/
 
 .newsletter {
     background-image: url(../images/background/background.jpg);
@@ -361,6 +399,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 94px 240px 29px;
+    margin: 0;
 }
 
 .under-subcribe {
@@ -370,6 +410,9 @@ body {
     text-align: center;
     line-height: 26px;
     color: #FFFFFF;
+    padding: 0 240px 46px;
+    margin: 0 auto;
+    width: 530px;
 }
 
 
@@ -410,7 +453,8 @@ body {
     text-transform: uppercase;
     width: 720px;
     height:120px;
-    margin-left: 61px;
+    margin: 0;
+    padding: 40px 53px 0px 61px;
 }
 
 
