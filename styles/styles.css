@@ -545,6 +545,7 @@ body {
 }
 
 .breadcrumbs-item-home {
+    list-style-type: none;
     padding: 8.3px 11px 51px 73px;
 }
 
@@ -578,6 +579,7 @@ body {
     line-height: 21px;
     color: #FFFFFF;
     padding: 5px 1016px 45px 26px;
+    list-style-type: none;
 }
 
 .page-footer-container {
@@ -692,6 +694,10 @@ body {
     margin-right: 72px;
 }
 
+.product-card {
+    list-style-type: none;
+}
+
 .product-card-link {
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
@@ -758,6 +764,10 @@ body {
 }
 
     /* Pagination*/
+
+.pagination-item {
+    list-style-type: none;
+}
 
 .pagination-show-more {
     font-family: "PT Sans", Arial, sans-serif;
