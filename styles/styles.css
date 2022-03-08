@@ -546,7 +546,8 @@ body {
 
 .breadcrumbs-item-home {
     list-style-type: none;
-    padding: 8.3px 11px 51px 73px;
+    padding: 8px 26px 0 73px;
+    margin: 0;
 }
 
 
@@ -560,7 +561,7 @@ body {
 }
 
 /* Вообще не знаю правильно ли так делать именно с этой 
-иконкой, как она вообще должна себя вести? 
+иконкой, как она вообще должна себя вести?  
 
 .breadcrumbs-link::before {
     content: "";
@@ -568,9 +569,8 @@ body {
     width: 5px;
     height: 8px;
     display: block;
- }   
-    */
-
+ }  
+  */
 
 .breadcrumbs-item {
     font-family: "PT Sans", Arial, sans-serif;
@@ -578,7 +578,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
-    padding: 5px 1016px 45px 26px;
+    padding-top: 5px;
     list-style-type: none;
 }
 
@@ -592,6 +592,10 @@ body {
     display: flex;
 }
 
+.catalog-filter {
+    display: flex;
+}
+
 .catalog-filter-group {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
@@ -602,6 +606,29 @@ body {
     flex-direction: column;
     align-items: flex-start;
     border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.catalog-filter-title.first {
+    padding: 45px 67px 30px 71px;
+}
+
+.catalog-filter-title.second {
+    padding: 45px 216px 0 0;
+}
+
+.catalog-filter-list.first {
+    padding: 0 102px 86px 71px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.catalog-filter-list.second {
+    padding:30px 167px 86px 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .control {
@@ -610,6 +637,22 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
+}
+
+.control-input.infrastructure {
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.filter-price {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.catalog-filter-group.third {
+    padding: 45px 0 34px;
+    margin: 0;
 }
 
 .range-field {
@@ -622,7 +665,7 @@ body {
 
 .button-use {
     font-family: "PT Sans", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -630,6 +673,10 @@ body {
     text-transform: uppercase; 
     color: #FFFFFF;
     background: #83B3D3;
+    border-radius: 4px;
+    margin: 105px 72px 20px 81px;
+    width: 160px;
+    height: 46px;
 }
 
 /* Что с ней не так :`) */
