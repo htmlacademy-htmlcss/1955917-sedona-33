@@ -97,7 +97,8 @@ body {
 }
 
 .right-column {
-    width: 1056px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Header */
@@ -663,6 +664,10 @@ body {
     opacity: 0.3;
 }
 
+.buttons-catalog-filter {
+    display: inline-block;
+}
+
 .button-use {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
@@ -675,6 +680,7 @@ body {
     background: #83B3D3;
     border-radius: 4px;
     margin: 105px 72px 20px 81px;
+    padding-left: 10%;
     width: 160px;
     height: 46px;
 }
@@ -685,7 +691,10 @@ body {
     font-weight: normal;
     line-height: 23px;
     text-align: center;  
+    background-color: rgba(255, 255, 255, 0);
     color: #FFFFFF;
+    border: none;
+    margin: 0 72px 83px 81px;
 }
 
 /* Catalog-beginning*/
@@ -719,10 +728,7 @@ body {
     line-height: 39px;
     text-transform: uppercase;
     color: #000000;
-    width: 337px;
-    margin-left: 71px;
-    margin-right: 192px;
-    margin-right: 81px;
+    margin: 50px 192px 56px 71px;
 }
 
 .select-control {
@@ -730,6 +736,12 @@ body {
     font-weight: normal;
     line-height: 23px;
     width: 287px;
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 48px;
+    margin: 44px 81px 73px 0;
+    padding: 12px 127px 13px 19px;
 }
 
 .visual-cards {
@@ -737,8 +749,8 @@ body {
 }
 
 .visual-of-page {
-    margin-left: 81px;
-    margin-right: 72px;
+    display: flex;
+    list-style-type: none;
 }
 
 .product-card {
