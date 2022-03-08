@@ -54,29 +54,29 @@
         <h2 class="visually-hidden">Фильтры для поиска</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
+            <legend class="catalog-filter-title first">Инфраструктура:</legend>
+            <ul class="catalog-filter-list first">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool">
+                  <input class="control-input infrastructure" type="checkbox" name="swimming-pool">
                   Бассейн
                 </label>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking">
+                  <input class="control-input infrastructure" type="checkbox" name="parking">
                   Парковка
                 </label>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  <input class="control-input infrastructure" type="checkbox" name="Wi-Fi">
                   Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
-            <ul class="catalog-filter-list">
+            <legend class="catalog-filter-title second">Тип жилья:</legend>
+            <ul class="catalog-filter-list second">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-living" value="hotel">
@@ -98,7 +98,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-price">
-            <legend class="catalog-filter-group">Стоимость,₽:</legend>
+            <legend class="catalog-filter-group third">Стоимость,₽:</legend>
             <div class="range">
               <div class="range-field">
                 <label for="range1">от</label>
@@ -113,6 +113,7 @@
               <button class="range-btn range-btn-from" type="button">от</button>
               <button class="range-btn range-btn-to" type="button">до</button>
             </div>
+            </fieldset>
             <button class="button-use" type="submit">Применить</button>
             <input class="button-reset" type="reset" value="Сбросить">
           </fieldset>
