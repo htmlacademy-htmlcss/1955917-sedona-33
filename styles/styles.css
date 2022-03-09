@@ -1,0 +1,915 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+ }
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100%;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #f2f2f2;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* Flex*/
+
+ .main-container {
+     flex-grow: 1;
+ }
+
+ .navigation {
+     margin: 0 auto;
+     display: flex;
+ }
+
+ .logo {
+     width: 139px;
+     padding: 0 47px 0 70px;
+     margin: 0;
+ }
+
+ .navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+ }
+
+.navigation-user {
+    max-width: 300px;
+}
+
+
+.footer-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.social-network {
+    display: flex;
+    max-width: 300px;
+}
+
+
+.htmlacademy {
+    width: 115px;
+    margin: 42px 72px 0 0;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.right-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Header */
+
+.page-header {
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+.navigation-link {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 20px 34px 19px 34px; 
+}
+
+.navigation-link:first-child {
+    padding: 20px 0 19px 17px;
+}
+
+.navigation-link:last-child {
+    padding: 20px 17px 19px 0;
+}
+
+.navigation-link-current {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.navavigation-user {
+    margin-left: auto;
+}
+
+
+
+.navigation-link-users {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    align-self: center;
+}
+
+.navigation-link-users.search::before {
+    content: ""; 
+    background-image: url(../images/icons/search.svg);
+    background-repeat: no-repeat;
+    width: 18,05px;
+    height: 18,1px;
+    display: block;
+    padding: 24px 12px 25px;
+    margin-top: 24px;
+}
+
+.navigation-link-users.favorites::before {
+    content: ""; 
+    background-image: url(../images/icons/favorite.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 66px;
+    display: block;
+    padding-left: 12px;
+    padding-right: 18px;
+}
+
+.navigation-link-users.wishlist {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756257;
+    padding: 9px 15px 8px 15px;
+    border-radius: 4px;
+    margin: 14px 70px 14px 0;
+}
+
+/* Headline */
+
+.represent {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    display: block;
+    padding: 63px 240px 31px 240px;
+}
+
+.review {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 22px;
+    font-weight: 400;  
+    text-align: center;
+    line-height: 36px;
+    color: #333333;
+    padding:0px 240px 80px 240px;
+}
+
+.sub-first-screen {
+    background-image: url(../images/headline/divider.svg), url(../images/background/index-background.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover;
+    background-position: bottom, center;
+    max-width: 1200px;
+    height: 485px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    margin: auto;
+    display: block;
+}
+
+/* Reasons */
+
+.reason.dark {
+    background: #83B3D3;
+    width: 400px;
+    height: 384px;
+}
+
+.reason-one {
+    display: block;
+}
+
+.reasons-list{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding: 0;
+}
+
+.reasons-list-item {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.reasons-with-picture {
+    font-family: "PT Sans", Arial, sans-serif; 
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;  
+    text-align: center;
+    text-transform: uppercase; 
+    padding-top: 97px;
+    padding-bottom: 30px;
+    width: 171px;
+    margin: 0 auto;
+}
+
+.number-white {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    padding: 0 75px 30px 75px;
+}
+
+.number-black {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-weight: normal;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 0 75px 30px;
+}
+
+.reason-white {
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 90px 87px 90px;
+}
+
+.reason-black {
+    font-family: "PT Sans", Arial, sans-serif; 
+    text-align: center;
+    font-weight: normal;
+    padding: 0 75px 108px;
+    margin: 0;
+}
+
+.reason {
+    width: 400px;
+    height: 384px;
+}
+
+.last-reasons {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 98px 0 29px;
+    width: 180px;
+    margin: 0 auto;
+}
+
+/* Sub-reasons*/
+
+.sub-reasons-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.sub-reasons-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 384px;
+    width: 400px;
+}
+
+
+.sub-reasons-item.house::before {
+    content: "";
+    background-image: url(../images/sub-reasons/house.svg);
+    width: 75px;
+    height: 72px;
+    display: block;
+    margin-top: 89px;
+}
+
+.sub-reasons-item.food::before {
+    content: "";
+    background-image: url(../images/sub-reasons/food.svg);
+    width: 74px;
+    height: 70px;
+    display: block;
+    margin-top: 91px;
+}
+
+.sub-reasons-item.souvenir::before {
+    content: "";
+    background-image: url(../images/sub-reasons/present.svg);
+    width: 64px;
+    height: 76px;
+    display: block;
+    margin-top: 85px;
+}
+
+.recommendation{
+    width: 250px;
+    height: 73px;
+    padding: 20px 75px 79px 75px;
+    margin: 0;
+}
+
+.bold-reasons {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    width: 250px;
+    height: 28px;
+    margin: 0;
+    padding: 23px 75px 0;
+}
+
+
+
+/* Subcribe */
+
+.interest {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold; 
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 91px 240px 29px;
+}
+
+.info {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    padding: 0px 240px 56px;
+    margin: 0;
+}
+
+.search-button {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756257;
+    margin: 0 313px 93px;
+    padding: 15px 0 15px;
+    border-radius: 10px;
+}
+
+.newsletter {
+    background-image: url(../images/background/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 411px;
+}
+
+.subcribe {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 94px 240px 29px;
+    margin: 0;
+}
+
+.under-subcribe {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 0 240px 46px;
+    margin: 0 auto;
+    width: 530px;
+}
+
+
+/* Footer */
+
+.twitter::before {
+    content: "";
+    background-image: url(../images/footer/twitter.svg);
+    width: 18px;
+    height: 15px;
+    display: block;
+    margin: 50px 29px 0 72px;
+}
+
+.facebook::before {
+    content: "";
+    background-image: url(../images/footer/facebook.svg); 
+    width: 10px;
+    height: 18px;
+    display: block;
+    margin: 49px 30px 0 0;
+}
+
+.youtube::before {
+    content: "";
+    background-image: url(../images/footer/youtube.svg);
+    width: 20px;
+    height: 16px;
+    display: block;
+    margin-top: 50px;
+}
+
+.number {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    background: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    width: 400px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+
+
+/* Catalog */
+
+/* Page-footer */
+
+.page-footer {
+    background-image: url(../images/background/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hotels-of-Sedona {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+    padding: 35px 601px 0 71px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.breadcrumbs {
+    display: flex;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-item-home {
+    list-style-type: none;
+    padding: 8px 26px 0 73px;
+    margin: 0;
+}
+
+
+.breadcrumbs-link.home::before {
+    content: "";
+    background-image: url(../images/icons/home.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+/* Вообще не знаю правильно ли так делать именно с этой 
+иконкой, как она вообще должна себя вести?  
+
+.breadcrumbs-link::before {
+    content: "";
+    background-image: url(../images/icons/next.svg);
+    width: 5px;
+    height: 8px;
+    display: block;
+ }  
+  */
+
+.breadcrumbs-item {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+.page-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.catalog-hotels {
+    display: flex;
+}
+
+.catalog-filter {
+    display: flex;
+}
+
+.catalog-filter-group {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.catalog-filter-title.first {
+    padding: 45px 67px 30px 71px;
+}
+
+.catalog-filter-title.second {
+    padding: 45px 216px 0 0;
+}
+
+.catalog-filter-list.first {
+    padding: 0 102px 86px 71px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.catalog-filter-list.second {
+    padding:30px 167px 86px 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.control {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.control-input.infrastructure {
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.filter-price {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.catalog-filter-group.third {
+    padding: 45px 0 34px;
+    margin: 0;
+}
+
+.range-field {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.buttons-catalog-filter {
+    display: inline-block;
+}
+
+.button-use {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    background: #83B3D3;
+    border-radius: 4px;
+    margin: 105px 72px 20px 81px;
+    padding-left: 10%;
+    width: 160px;
+    height: 46px;
+}
+
+/* Что с ней не так :`) */
+.button-reset {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+    text-align: center;  
+    background-color: rgba(255, 255, 255, 0);
+    color: #FFFFFF;
+    border: none;
+    margin: 0 72px 83px 81px;
+}
+
+/* Catalog-beginning*/
+
+
+/* Control-input */
+
+.control-input-cards::before {
+    content: url(../images/icons/mode-tile-1.svg);
+}
+
+.control-input-main::before {
+    content: url(../images/icons/mode-tile-2.svg);
+}
+
+.control-input-list::before {
+    content: url(../images/icons/mode-list-3.svg);
+}
+
+
+.star::before {
+    content: url(../images/icons/star.svg);
+}
+
+/* Hotels */
+
+.hotel-sort-tittle {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 50px 192px 56px 71px;
+}
+
+.select-control {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+    width: 287px;
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 48px;
+    margin: 44px 81px 73px 0;
+    padding: 12px 127px 13px 19px;
+}
+
+.visual-cards {
+    margin-right: 8px;
+}
+
+.visual-of-page {
+    display: flex;
+    list-style-type: none;
+}
+
+.product-card {
+    list-style-type: none;
+}
+
+.product-card-link {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.product-card-name {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+.product-card-title {
+    display: flex;
+}
+
+.product-card-price {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+.product-card-button.detail {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #756257;
+    text-decoration: none;
+}
+
+/* Здесь кнопка должна меняться на зеленую при нажатии, пока что оставлю так*/
+
+.product-card-button.favorites {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-decoration: none;
+}
+
+.rating {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.number-of-hotels {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: 23px;
+    margin-left: 300px;
+    width: 175px;
+}
+
+.number-of-hotels.amount {
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    width: 160px;
+    height: 48px;
+    padding: 13px 133px 12px 17px;
+}
+
+.numbers {
+    font-family: "PT Sans", Arial, sans-serif;
+    line-height: 23px;
+    font-weight: normal;
+}
+
+    /* Pagination*/
+
+.pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pre-pagination {
+    display: flex;
+}
+
+.pagination-item {
+    list-style-type: none;
+}
+
+.pagination-show-more {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    background: #83B3D3;
+    margin: 64px 290px 60px;
+    padding: 17px 0px;
+    width: 620px;
+    height: 26px;
+    border-radius: 4px;
+}
+
+.pagination-link.pagination-current {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.pagination-link {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-decoration: none;
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+/* Пока оставляю так, ибо нужно же было сделать только крупные блоки*/
