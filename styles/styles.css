@@ -101,6 +101,13 @@ body {
     justify-content: space-between;
 }
 
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /* Header */
 
 .page-header {
@@ -774,6 +781,9 @@ body {
     line-height: 23px;
 }
 
+.product-card-title {
+    display: flex;
+}
 
 .product-card-price {
     font-family: "PT Sans", Arial, sans-serif;
@@ -818,11 +828,36 @@ body {
 .number-of-hotels {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
-    font-size: 18px;
     line-height: 23px;
+    margin-left: 300px;
+    width: 175px;
+}
+
+.number-of-hotels.amount {
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    width: 160px;
+    height: 48px;
+    padding: 13px 133px 12px 17px;
+}
+
+.numbers {
+    font-family: "PT Sans", Arial, sans-serif;
+    line-height: 23px;
+    font-weight: normal;
 }
 
     /* Pagination*/
+
+.pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pre-pagination {
+    display: flex;
+}
 
 .pagination-item {
     list-style-type: none;
@@ -840,6 +875,11 @@ body {
     text-transform: uppercase;
     color: #f2f2f2;
     background: #83B3D3;
+    margin: 64px 290px 60px;
+    padding: 17px 0px;
+    width: 620px;
+    height: 26px;
+    border-radius: 4px;
 }
 
 .pagination-link.pagination-current {
@@ -866,6 +906,10 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #83B3D3;
-    text-decoration: none ;
+    text-decoration: none;
+    display: flex;
+    width: 55px;
+    height: 55px;
 }
 
+/* Пока оставляю так, ибо нужно же было сделать только крупные блоки*/
