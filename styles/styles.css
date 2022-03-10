@@ -347,18 +347,19 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 384px;
+    height: 200px;
     width: 400px;
+    position: relative;
+    padding-top: 184px;
 }
-
 
 .sub-reasons-item.house::before {
     content: "";
     background-image: url(../images/sub-reasons/house.svg);
     width: 75px;
     height: 72px;
-    display: block;
-    margin-top: 89px;
+    position: absolute;
+    top: 89px;
 }
 
 .sub-reasons-item.food::before {
@@ -366,8 +367,8 @@ body {
     background-image: url(../images/sub-reasons/food.svg);
     width: 74px;
     height: 70px;
-    display: block;
-    margin-top: 91px;
+    top: 91px;
+    position: absolute;
 }
 
 .sub-reasons-item.souvenir::before {
@@ -375,8 +376,8 @@ body {
     background-image: url(../images/sub-reasons/present.svg);
     width: 64px;
     height: 76px;
-    display: block;
-    margin-top: 85px;
+    position: absolute;
+    top: 85px;
 }
 
 .recommendation{
@@ -397,7 +398,7 @@ body {
     width: 250px;
     height: 28px;
     margin: 0;
-    padding: 23px 75px 0;
+    padding: 0 75px;
 }
 
 
