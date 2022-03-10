@@ -106,6 +106,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0 72px;
 }
 
 /* Header */
@@ -464,6 +466,18 @@ body {
     margin: 0;
 }
 
+.subcribe-catalog {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 0 240px 46px;
+    margin: 0;
+}
+
 .under-subcribe {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
@@ -476,6 +490,16 @@ body {
     width: 530px;
 }
 
+.under-subcribe-catalog {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    line-height: 26px;
+    padding: 0 240px 46px;
+    margin: 0 auto;
+    width: 530px;
+}
 
 /* Footer */
 
@@ -688,9 +712,10 @@ body {
     background: #83B3D3;
     border-radius: 4px;
     margin: 105px 72px 20px 81px;
-    padding-left: 10%;
     width: 160px;
     height: 46px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Что с ней не так :`) */
@@ -712,19 +737,27 @@ body {
 
 .control-input-cards::before {
     content: url(../images/icons/mode-tile-1.svg);
+    width: 16px;
+    height: 14px;
 }
 
 .control-input-main::before {
     content: url(../images/icons/mode-tile-2.svg);
+    width: 16px;
+    height: 14px;
 }
 
 .control-input-list::before {
     content: url(../images/icons/mode-list-3.svg);
+    width: 16px;
+    height: 14px;
 }
 
 
 .star::before {
     content: url(../images/icons/star.svg);
+    width: 18px;
+    height: 17px;
 }
 
 /* Hotels */
@@ -752,7 +785,7 @@ body {
     padding: 12px 127px 13px 19px;
 }
 
-.visual-cards {
+.visual-cards:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -761,8 +794,19 @@ body {
     list-style-type: none;
 }
 
+.product-card:not(:nth-of-type(3)) {
+    margin-right: 18px;
+}
+
 .product-card {
     list-style-type: none;
+    margin: 0 0 10px 0;
+    width: 340px;
+    height: 438px;
+}
+
+.hotel-picture {
+    padding: 20px 20px 16px 20px;
 }
 
 .product-card-link {
@@ -773,16 +817,22 @@ body {
     line-height: 31px;
     color: #000000;
     text-decoration: none;
-    margin-right: 18px;
 }
 
 .product-card-name {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
+    margin: 0 25px 16px 20px;
+    width: 133px;
 }
 
 .product-card-title {
+    display: flex;
+    margin: 0 112px 16px 20px;
+}
+
+.product-price-name {
     display: flex;
 }
 
@@ -790,6 +840,11 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
+    margin: 0 19px 16px 0;
+}
+
+.product-card-button {
+    display: flex;
 }
 
 .product-card-button.detail {
@@ -802,6 +857,9 @@ body {
     color: #FFFFFF;
     background-color: #756257;
     text-decoration: none;
+    border-radius: 4px;
+    margin: 0 26px 26px 20px;
+    padding: 9px 20.5px 10px;
 }
 
 /* Здесь кнопка должна меняться на зеленую при нажатии, пока что оставлю так*/
@@ -816,6 +874,14 @@ body {
     color: #FFFFFF;
     background-color: #83B3D3;
     text-decoration: none;
+    border-radius: 4px;
+    margin: 0 20px 25px 0;
+    padding: 9px 20.5px 10px;
+}
+
+.general-results {
+    display: flex;
+    align-items: baseline;
 }
 
 .rating {
@@ -824,13 +890,23 @@ body {
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
+    width: 160px;
+    margin: 0 20px 0 auto;
+}
+
+.rating-result {
+    margin: 0 0 30px 20px;
+}
+
+.star:not(:last-child) {
+    margin-right: 7px;
 }
 
 .number-of-hotels {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
-    margin-left: 300px;
+    margin: 76px 0 89px 300px;
     width: 175px;
 }
 
@@ -839,7 +915,7 @@ body {
     box-sizing: border-box;
     width: 160px;
     height: 48px;
-    padding: 13px 133px 12px 17px;
+    margin: 63px 72px 77px 51px;
 }
 
 .numbers {
@@ -860,8 +936,17 @@ body {
     display: flex;
 }
 
-.pagination-item {
+.pagination-item { 
     list-style-type: none;
+    margin-top: 50px;
+}
+
+.pagination-item:first-child {
+    margin-left: 72px;
+}
+
+.pagination-item:not(:last-child){
+    margin-right: 8px;
 }
 
 .pagination-show-more {
@@ -876,11 +961,13 @@ body {
     text-transform: uppercase;
     color: #f2f2f2;
     background: #83B3D3;
-    margin: 64px 290px 60px;
+    margin: 64px 290px 0;
     padding: 17px 0px;
     width: 620px;
     height: 26px;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
 }
 
 .pagination-link.pagination-current {
@@ -890,6 +977,7 @@ body {
     line-height: 26px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -901,14 +989,15 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #83B3D3;
     text-decoration: none;
     display: flex;
+    box-sizing: border-box;
     width: 55px;
     height: 55px;
 }
