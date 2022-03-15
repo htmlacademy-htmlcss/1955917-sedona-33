@@ -130,6 +130,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
+    align-items: center;
 }
 
 .right-column {
@@ -298,7 +299,6 @@ body {
 .reason.dark {
     background: #83B3D3;
     width: 400px;
-    height: 384px;
 }
 
 .reason-one {
@@ -372,7 +372,6 @@ body {
 
 .reason {
     width: 400px;
-    height: 384px;
 }
 
 .last-reasons {
@@ -401,7 +400,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 200px;
     width: 400px;
     position: relative;
     padding-top: 184px;
@@ -436,7 +434,6 @@ body {
 
 .recommendation{
     width: 250px;
-    height: 73px;
     padding: 20px 75px 79px 75px;
     margin: 0;
 }
@@ -638,7 +635,6 @@ footer {
     color: #FFFFFF;
     padding: 35px 601px 0 71px;
     margin: 0;
-    white-space: nowrap;
 }
 
 .breadcrumbs {
@@ -863,17 +859,29 @@ footer {
     box-sizing: border-box;
     border-radius: 4px;
     height: 48px;
-    margin: 44px 81px 73px 0;
+    margin: 0 81px 0 0;
     padding: 12px 127px 13px 19px;
 }
 
-.visual-cards:not(:last-child) {
+.cards:not(:last-child) {
     margin-right: 8px;
+}
+
+.cards {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .visual-of-page {
     display: flex;
     list-style-type: none;
+    height: 48px;
+    padding: 0;
+    margin: 0;
 }
 
 .product-catalog {
@@ -1048,7 +1056,6 @@ footer {
     margin: 64px 290px 0;
     padding: 17px 0px;
     width: 620px;
-    height: 26px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
