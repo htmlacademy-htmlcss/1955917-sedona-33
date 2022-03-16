@@ -14,6 +14,10 @@
     font-display: swap;
 }
 
+header {
+    background-color: white;
+}
+
 html {
     height: 100%;
  }
@@ -44,8 +48,11 @@ body {
 
 /* Flex*/
 
+
+
  .main-container {
      flex-grow: 1;
+     background: white;
  }
 
  .navigation {
@@ -65,6 +72,7 @@ body {
     padding: 0;
     list-style-type: none;
     flex-wrap: wrap;
+    align-items: center;
  }
 
 .navigation-user {
@@ -74,8 +82,9 @@ body {
 
 .footer-container {
     display: flex;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .social-network {
@@ -83,10 +92,37 @@ body {
     max-width: 300px;
 }
 
+.social {
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+}
+
+.social:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social:first-of-type {
+    margin-left: 72px;
+}
+
+.social:hover {
+    border: 3px solid #83B3D3;
+    border-radius: 10px;
+}
+
+.social::before {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+}
 
 .htmlacademy {
     width: 115px;
-    margin: 42px 72px 0 0;
+    margin-right: 72px;
 }
 
 .filter {
@@ -94,6 +130,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
+    align-items: center;
 }
 
 .right-column {
@@ -106,13 +143,15 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0 72px;
 }
 
 /* Header */
 
 .page-header {
     color: #000000;
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 .navigation-link {
@@ -161,28 +200,27 @@ body {
     color: #000000;
     display: flex;
     align-self: center;
+    width: 44px;
+    height: 66px;
+    position: relative;
 }
 
 .navigation-link-users.search::before {
     content: ""; 
     background-image: url(../images/icons/search.svg);
     background-repeat: no-repeat;
-    width: 18,05px;
-    height: 18,1px;
-    display: block;
-    padding: 24px 12px 25px;
-    margin-top: 24px;
+    width: 18px;
+    height: 18px;
+    top: 24px;
+    position: absolute;
 }
 
 .navigation-link-users.favorites::before {
     content: ""; 
     background-image: url(../images/icons/favorite.svg);
     background-repeat: no-repeat;
-    width: 32px;
-    height: 66px;
-    display: block;
-    padding-left: 12px;
-    padding-right: 18px;
+    width: 44px;
+    height: 41px;
 }
 
 .navigation-link-users.wishlist {
@@ -194,12 +232,27 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background: #756257;
-    padding: 9px 15px 8px 15px;
     border-radius: 4px;
-    margin: 14px 70px 14px 0;
+    width: 160px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 70px;
+    border: 3px solid #f2f2f2; 
+}
+
+.navigation-link-users.wishlist:hover {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 
 /* Headline */
+
+.first-screen {
+    background-color: white;
+}
 
 .represent {
     font-family: "PT Sans", Arial, sans-serif; 
@@ -221,6 +274,7 @@ body {
     line-height: 36px;
     color: #333333;
     padding:0px 240px 80px 240px;
+    margin: 0;
 }
 
 .sub-first-screen {
@@ -245,7 +299,6 @@ body {
 .reason.dark {
     background: #83B3D3;
     width: 400px;
-    height: 384px;
 }
 
 .reason-one {
@@ -258,6 +311,7 @@ body {
     flex-wrap: wrap;
     width: 1200px;
     padding: 0;
+    background-color: white;
 }
 
 .reasons-list-item {
@@ -318,7 +372,6 @@ body {
 
 .reason {
     width: 400px;
-    height: 384px;
 }
 
 .last-reasons {
@@ -347,18 +400,18 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 384px;
     width: 400px;
+    position: relative;
+    padding-top: 184px;
 }
-
 
 .sub-reasons-item.house::before {
     content: "";
     background-image: url(../images/sub-reasons/house.svg);
     width: 75px;
     height: 72px;
-    display: block;
-    margin-top: 89px;
+    position: absolute;
+    top: 89px;
 }
 
 .sub-reasons-item.food::before {
@@ -366,8 +419,8 @@ body {
     background-image: url(../images/sub-reasons/food.svg);
     width: 74px;
     height: 70px;
-    display: block;
-    margin-top: 91px;
+    top: 91px;
+    position: absolute;
 }
 
 .sub-reasons-item.souvenir::before {
@@ -375,13 +428,12 @@ body {
     background-image: url(../images/sub-reasons/present.svg);
     width: 64px;
     height: 76px;
-    display: block;
-    margin-top: 85px;
+    position: absolute;
+    top: 85px;
 }
 
 .recommendation{
     width: 250px;
-    height: 73px;
     padding: 20px 75px 79px 75px;
     margin: 0;
 }
@@ -397,12 +449,16 @@ body {
     width: 250px;
     height: 28px;
     margin: 0;
-    padding: 23px 75px 0;
+    padding: 0 75px;
 }
 
 
 
 /* Subcribe */
+
+.search {
+    background-color: white;
+}
 
 .interest {
     font-family: "PT Sans", Arial, sans-serif;
@@ -463,6 +519,18 @@ body {
     margin: 0;
 }
 
+.subcribe-catalog {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 0 240px 46px;
+    margin: 0;
+}
+
 .under-subcribe {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
@@ -475,34 +543,60 @@ body {
     width: 530px;
 }
 
+.under-subcribe-catalog {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    line-height: 26px;
+    padding: 0 240px 46px;
+    margin: 0 auto;
+    width: 530px;
+}
 
 /* Footer */
+
+footer {
+    background-color: white;
+}
+
+.twitter {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+}
 
 .twitter::before {
     content: "";
     background-image: url(../images/footer/twitter.svg);
-    width: 18px;
-    height: 15px;
-    display: block;
-    margin: 50px 29px 0 72px;
+    position: absolute;
+}
+
+.facebook {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-items: center;
 }
 
 .facebook::before {
     content: "";
     background-image: url(../images/footer/facebook.svg); 
-    width: 10px;
-    height: 18px;
-    display: block;
-    margin: 49px 30px 0 0;
+    position: absolute;
+}
+
+.youtube {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-items: center;
 }
 
 .youtube::before {
     content: "";
     background-image: url(../images/footer/youtube.svg);
-    width: 20px;
-    height: 16px;
-    display: block;
-    margin-top: 50px;
+    position: absolute;
 }
 
 .number {
@@ -515,10 +609,9 @@ body {
     text-align: center;
     text-transform: uppercase;
     width: 400px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -542,7 +635,6 @@ body {
     color: #FFFFFF;
     padding: 35px 601px 0 71px;
     margin: 0;
-    white-space: nowrap;
 }
 
 .breadcrumbs {
@@ -558,6 +650,15 @@ body {
     margin: 0;
 }
 
+.breadcrumbs-link.home { 
+    width: 12px;
+    display: block;
+    height: 12px;
+}
+
+.breadcrumbs-link {
+    position: relative;
+}
 
 .breadcrumbs-link.home::before {
     content: "";
@@ -568,26 +669,28 @@ body {
     display: block;
 }
 
-/* Вообще не знаю правильно ли так делать именно с этой 
-иконкой, как она вообще должна себя вести?  
-
-.breadcrumbs-link::before {
+.breadcrumbs-item:not(:last-of-type) .breadcrumbs-link:after {
     content: "";
     background-image: url(../images/icons/next.svg);
     width: 5px;
     height: 8px;
     display: block;
+    right: -16px;
+    top: 2px;
+    position: absolute;
  }  
-  */
 
 .breadcrumbs-item {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
+    display: flex;
     line-height: 21px;
     color: #FFFFFF;
     padding-top: 5px;
     list-style-type: none;
+    align-items: center;
+    justify-items: center;
 }
 
 .page-footer-container {
@@ -687,9 +790,10 @@ body {
     background: #83B3D3;
     border-radius: 4px;
     margin: 105px 72px 20px 81px;
-    padding-left: 10%;
     width: 160px;
     height: 46px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Что с ней не так :`) */
@@ -711,19 +815,27 @@ body {
 
 .control-input-cards::before {
     content: url(../images/icons/mode-tile-1.svg);
+    width: 16px;
+    height: 14px;
 }
 
 .control-input-main::before {
     content: url(../images/icons/mode-tile-2.svg);
+    width: 16px;
+    height: 14px;
 }
 
 .control-input-list::before {
     content: url(../images/icons/mode-list-3.svg);
+    width: 16px;
+    height: 14px;
 }
 
 
 .star::before {
     content: url(../images/icons/star.svg);
+    width: 18px;
+    height: 17px;
 }
 
 /* Hotels */
@@ -747,21 +859,45 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     height: 48px;
-    margin: 44px 81px 73px 0;
+    margin: 0 81px 0 0;
     padding: 12px 127px 13px 19px;
 }
 
-.visual-cards {
+.cards:not(:last-child) {
     margin-right: 8px;
+}
+
+.cards {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .visual-of-page {
     display: flex;
     list-style-type: none;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+.product-catalog {
+    display: flex;
+}
+
+.product-card:not(:nth-of-type(3)) {
+    margin-right: 18px;
 }
 
 .product-card {
     list-style-type: none;
+    margin: 0 0 10px 0;
+    width: 300px;
+    height: 438px;
+    padding: 20px;
 }
 
 .product-card-link {
@@ -772,23 +908,35 @@ body {
     line-height: 31px;
     color: #000000;
     text-decoration: none;
-    margin-right: 18px;
 }
 
 .product-card-name {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
+    margin: 0 0 16px 0;
+    width: 133px;
 }
 
 .product-card-title {
     display: flex;
 }
 
+
 .product-card-price {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
+    margin: 0 19px 16px 0;
+}
+
+.product-card-button {
+    display: flex;
+}
+
+.product-price-name {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-card-button.detail {
@@ -801,6 +949,9 @@ body {
     color: #FFFFFF;
     background-color: #756257;
     text-decoration: none;
+    border-radius: 4px;
+    margin: 0 0 26px 0;
+    padding: 9px 20.5px 10px;
 }
 
 /* Здесь кнопка должна меняться на зеленую при нажатии, пока что оставлю так*/
@@ -815,6 +966,14 @@ body {
     color: #FFFFFF;
     background-color: #83B3D3;
     text-decoration: none;
+    border-radius: 4px;
+    margin: 0 0 25px 0;
+    padding: 9px 20.5px 10px;
+}
+
+.general-results {
+    display: flex;
+    align-items: baseline;
 }
 
 .rating {
@@ -823,13 +982,23 @@ body {
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
+    width: 160px;
+    margin: 0 0 0 auto;
+    padding: 10px 0;
+    background: #F2F2F2;
+    border-radius: 4px;
+}
+
+
+.star:not(:last-child) {
+    margin-right: 7px;
 }
 
 .number-of-hotels {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
-    margin-left: 300px;
+    margin: 76px 0 89px 300px;
     width: 175px;
 }
 
@@ -838,7 +1007,7 @@ body {
     box-sizing: border-box;
     width: 160px;
     height: 48px;
-    padding: 13px 133px 12px 17px;
+    margin: 63px 72px 77px 51px;
 }
 
 .numbers {
@@ -859,8 +1028,17 @@ body {
     display: flex;
 }
 
-.pagination-item {
+.pagination-item { 
     list-style-type: none;
+    margin-top: 50px;
+}
+
+.pagination-item:first-child {
+    margin-left: 72px;
+}
+
+.pagination-item:not(:last-child){
+    margin-right: 8px;
 }
 
 .pagination-show-more {
@@ -875,11 +1053,12 @@ body {
     text-transform: uppercase;
     color: #f2f2f2;
     background: #83B3D3;
-    margin: 64px 290px 60px;
+    margin: 64px 290px 0;
     padding: 17px 0px;
     width: 620px;
-    height: 26px;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
 }
 
 .pagination-link.pagination-current {
@@ -889,6 +1068,7 @@ body {
     line-height: 26px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -900,14 +1080,15 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #83B3D3;
     text-decoration: none;
     display: flex;
+    box-sizing: border-box;
     width: 55px;
     height: 55px;
 }
