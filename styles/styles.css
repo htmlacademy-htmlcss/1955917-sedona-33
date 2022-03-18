@@ -1322,5 +1322,8 @@ footer {
     text-decoration: none;
 }
 
+.modal-container-close {
+    display: none;
+}
 
 /* Я вообще не понимаю как сделать модальное окно, запуталась */
