@@ -89,17 +89,19 @@
             <legend class="catalog-filter-group third">Стоимость,₽:</legend>
             <div class="range">
               <div class="range-field">
-                <label for="range1">от</label>
-                <input type="text" id="range1">
+                <label for="range1" class="label-range">от</label>
+                <input type="text" id="range1"  class="input-range input-range-from">
               </div>
               <div class="range-field">
-                <label for="range2">до</label>
-                <input type="text" id="range2">
+                <label for="range2" class="label-range">до</label>
+                <input type="text" id="range2" class="input-range input-range-to">
               </div>
             </div>
             <div class="range-bar">
-              <button class="range-btn range-btn-from" type="button">от</button>
-              <button class="range-btn range-btn-to" type="button">до</button>
+              <div class="range-bar-child">
+                <button class="range-btn range-btn-from" type="button"></button>
+                <button class="range-btn range-btn-to" type="button"></button>
+              </div>
             </div>
             </fieldset>
             <div class="buttons-catalog-filter">
@@ -119,19 +121,16 @@
     </select>
     <ul class="visual-of-page">
       <li class="visual-cards cards">
-        <label class="control-cards">
-          <input class="control-input-cards" type="radio" name="view-type" value="cards">
-        </label>
+        <input class="control-input control-input-cards" type="radio" name="view-type" id="control-input-cards" value="cards">
+        <label class="control-cards control-cards-cards" for="control-input-cards"></label>
       </li>
       <li class="visual-one-main cards"">
-        <label class="control-cards">
-          <input class="control-input-main" type="radio" name="view-type" value="one-main">
-        </label>
+        <input class="control-input control-input-main" type="radio" name="view-type" id="control-input-main" value="one-main">
+        <label class="control-cards control-cards-main" for="control-input-main"></label>
       </li>
       <li class="visual-list cards">
-        <label class="control-cards">
-          <input class="control-input-list" type="radio" name="view-type" value="list">
-        </label>
+        <input class="control-input control-input-list" type="radio" name="view-type" id="control-input-list" value="list">
+        <label class="control-cards control-cards-list" for="control-input-list"></label>
       </li>
     </ul>
     </div>
