@@ -810,6 +810,11 @@ body {
 }
 
 .input-range {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 1);
     background: transparent;
     height: 48px;
     padding-left: 17px;
@@ -818,7 +823,6 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 48px;
-    border: 2px solid #FFFFFF;
     padding-right: 48px;
     padding-left: 17px;
 }
@@ -1310,6 +1314,10 @@ body {
     background: rgba(242, 242, 242, 0.8);
   }
 
+.modal-content {
+  margin-left: 50px;
+}
+
 .modal {
     position: relative;
     margin: auto;
@@ -1460,6 +1468,8 @@ body {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     position: relative;
+    top: 7px;
+    right: 115.5px;
 }
 
 .prompt::before {
@@ -1486,6 +1496,7 @@ body {
 .input-wrapper {
     display: flex;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .input-wrapper>*{
@@ -1512,12 +1523,26 @@ body {
 }
 
 
-.prompt {
-    display: none;
+.children-label {
+    margin-left: 60px;
+    padding-right: 40px;
 }
 
+.children-input-info {
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+    height: 20px;
+    width: 100px;
+}
+
+.adults-label {
+    margin-right: 30px;
+}
+
+
 .modal-container-close {
-    
+    display: none;
 }
 
 /* Я вообще не понимаю как сделать модальное окно, запуталась */
