@@ -553,6 +553,47 @@ body {
 
 /* Footer */
 
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    color: #000000;
+    padding: 0 0 0 22px;
+    margin: 0;
+    height: 60px;
+    width: 600px;
+    background: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.submit {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0; 
+    width: 200px;
+    height: 60px;
+    background-color: #83B3D3;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
 
 .twitter {
     display: flex;
@@ -747,17 +788,92 @@ body {
     margin: 0;
 }
 
+.range {
+    display: flex;
+    width: 287px;
+}
+
 .range-field {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
     color: #FFFFFF;
     opacity: 0.3;
+    position: relative;
+}
+
+.label-range {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-range {
+    background: transparent;
+    height: 48px;
+    padding-left: 17px;
+    padding-right: 48px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    border: 2px solid #FFFFFF;
+    padding-right: 48px;
+    padding-left: 17px;
+}
+
+  .input-range-to {
+    border-radius: 0 4px 4px 0;
+  }
+ 
+  .input-range-from {
+    border-radius: 4px 0 0 4px;
+  }
+
+.input-range:focus {
+    outline: none;
 }
 
 .buttons-catalog-filter {
     display: inline-block;
 }
+
+.range-bar {
+    position: relative;
+    width: 287px;
+    height: 8px;
+    background: rgba(255, 255, 255, .3) ;
+    margin-top: 32px;
+}
+
+.range-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.range-bar-child {
+    position: absolute;
+    width: 227px;
+    height: 100%;
+    background: rgb(255, 255, 255) ;
+}
+
+.range-btn.range-btn-from {
+    left: 0;
+    top: -7.5px;
+}
+
+.range-btn.range-btn-to {
+    right: 0;
+    top: -7.5px;
+}
+
+
+
 
 .button-use {
     font-family: "PT Sans", Arial, sans-serif;
@@ -894,24 +1010,31 @@ body {
 }
 /* Control-input */
 
-.control-input-cards::before {
+.control-cards-cards::before {
     content: url(../images/icons/mode-tile-1.svg);
     width: 16px;
     height: 14px;
 }
 
-.control-input-main::before {
+.control-cards-main::before {
     content: url(../images/icons/mode-tile-2.svg);
     width: 16px;
     height: 14px;
 }
 
-.control-input-list::before {
+.control-input:checked+.control-cards {
+    border: #000000 solid 1px;
+}
+
+.control-cards-list::before {
     content: url(../images/icons/mode-list-3.svg);
     width: 16px;
     height: 14px;
 }
 
+.control-input {
+    display: none;
+}
 
 .star::before {
     content: url(../images/icons/star.svg);
@@ -1201,7 +1324,7 @@ body {
     min-height: 561px;
 }
 
-.search-form {
+.search-form-modal {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -1297,6 +1420,7 @@ body {
     color: #FFFFFF;
     display: flex;
     justify-content: center;
+    border: none;
     align-items: center;
     width: 575px;
     height: 60px;
@@ -1349,10 +1473,51 @@ body {
     transform: translate(-50%);
 }
 
+.number-input-wrapper {
+    display: flex;
+    width: 133px;
+    height: 50px;
+}
 
+.input-wrapper input {
+    width: 33px;
+}
+
+.input-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.input-wrapper>*{
+}
+
+.modal-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-input-button {
+    width: 50px;
+    border: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color:#000000;
+}
+
+.input-ppl-count {
+    text-align: center;
+}
+
+
+.prompt {
+    display: none;
+}
 
 .modal-container-close {
-    display: none;
+    
 }
 
 /* Я вообще не понимаю как сделать модальное окно, запуталась */
