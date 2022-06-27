@@ -14,10 +14,6 @@
     font-display: swap;
 }
 
-header {
-    background-color: white;
-}
-
 html {
     height: 100%;
  }
@@ -62,8 +58,8 @@ body {
 
  .logo {
      width: 139px;
-     padding: 0 47px 0 70px;
-     margin: 0;
+     margin-right: 47px;
+     margin-left: 72px;
  }
 
  .navigation-list {
@@ -80,11 +76,14 @@ body {
 }
 
 
-.footer-container {
+.page-footer {
     display: flex;
-    margin: 40px auto 0 auto;
+    padding: 40px 72px;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .social-network {
@@ -103,9 +102,6 @@ body {
     margin-right: 30px;
 }
 
-.social:first-of-type {
-    margin-left: 72px;
-}
 
 .social:hover {
     border: 3px solid #83B3D3;
@@ -122,7 +118,6 @@ body {
 
 .htmlacademy {
     width: 115px;
-    margin-right: 72px;
 }
 
 .filter {
@@ -205,7 +200,7 @@ body {
     position: relative;
 }
 
-.navigation-link-users.search::before {
+.navigation-link-users.search-icon::before {
     content: ""; 
     background-image: url(../images/icons/search.svg);
     background-repeat: no-repeat;
@@ -240,7 +235,7 @@ body {
     justify-content: center;
     margin-left: 20px;
     margin-right: 70px;
-    border: 3px solid #f2f2f2; 
+    border: 3px solid; 
 }
 
 .navigation-link-users.wishlist:hover {
@@ -458,6 +453,7 @@ body {
 
 .search {
     background-color: white;
+    padding-bottom: 93px;
 }
 
 .interest {
@@ -493,7 +489,8 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background: #756257;
-    margin: 0 313px 93px;
+    margin: 0 auto;
+    width: 575px;
     padding: 15px 0 15px;
     border-radius: 10px;
 }
@@ -556,8 +553,46 @@ body {
 
 /* Footer */
 
-footer {
-    background-color: white;
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    color: #000000;
+    padding: 0 0 0 22px;
+    margin: 0;
+    height: 60px;
+    width: 600px;
+    background: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.submit {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0; 
+    width: 200px;
+    height: 60px;
+    background-color: #83B3D3;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
 }
 
 .twitter {
@@ -620,7 +655,7 @@ footer {
 
 /* Page-footer */
 
-.page-footer {
+.search-form {
     background-image: url(../images/background/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -693,7 +728,7 @@ footer {
     justify-items: center;
 }
 
-.page-footer-container {
+.search-form-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -742,19 +777,6 @@ footer {
     list-style-type: none;
 }
 
-.control {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-    color: #FFFFFF;
-}
-
-.control-input.infrastructure {
-    background: #FFFFFF;
-    border-radius: 4px;
-}
-
 .filter-price {
     margin: 0;
     padding: 0;
@@ -766,17 +788,96 @@ footer {
     margin: 0;
 }
 
+.range {
+    display: flex;
+    width: 287px;
+}
+
 .range-field {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     line-height: 23px;
     color: #FFFFFF;
     opacity: 0.3;
+    position: relative;
+}
+
+.label-range {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-range {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 1);
+    background: transparent;
+    height: 48px;
+    padding-left: 17px;
+    padding-right: 48px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding-right: 48px;
+    padding-left: 17px;
+}
+
+  .input-range-to {
+    border-radius: 0 4px 4px 0;
+  }
+ 
+  .input-range-from {
+    border-radius: 4px 0 0 4px;
+  }
+
+.input-range:focus {
+    outline: none;
 }
 
 .buttons-catalog-filter {
     display: inline-block;
 }
+
+.range-bar {
+    position: relative;
+    width: 287px;
+    height: 8px;
+    background: rgba(255, 255, 255, .3) ;
+    margin-top: 32px;
+}
+
+.range-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.range-bar-child {
+    position: absolute;
+    width: 227px;
+    height: 100%;
+    background: rgb(255, 255, 255) ;
+}
+
+.range-btn.range-btn-from {
+    left: 0;
+    top: -7.5px;
+}
+
+.range-btn.range-btn-to {
+    right: 0;
+    top: -7.5px;
+}
+
+
+
 
 .button-use {
     font-family: "PT Sans", Arial, sans-serif;
@@ -796,7 +897,6 @@ footer {
     justify-content: center;
 }
 
-/* Что с ней не так :`) */
 .button-reset {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
@@ -810,27 +910,135 @@ footer {
 
 /* Catalog-beginning*/
 
+/* Buttons-checkbox */
 
+.input-checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.chekbox {
+    position: relative;
+}
+
+.label-checkbox {
+    font-family: "PT Sans", Arial, sans-serif;  
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 39px;
+}
+
+.label-checkbox::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.label-checkbox::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/check-mark.svg) no-repeat;
+    background-size: 12px 10px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.input-checkbox:checked + .label-checkbox::after {
+    opacity: 1;
+}
+
+/* Buttons-radio */
+
+.radio-input {
+    appearance: none;
+    position: absolute;
+}
+
+
+.radio {
+    position: relative;
+}
+
+.radio-label {
+    font-family: "PT Sans", Arial, sans-serif;  
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 39px;
+}
+
+.radio-label::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.radio-label::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/circle.svg) no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.radio-input:checked + .radio-label::after {
+    opacity: 1;
+}
 /* Control-input */
 
-.control-input-cards::before {
+.control-cards-cards::before {
     content: url(../images/icons/mode-tile-1.svg);
     width: 16px;
     height: 14px;
 }
 
-.control-input-main::before {
+.control-cards-main::before {
     content: url(../images/icons/mode-tile-2.svg);
     width: 16px;
     height: 14px;
 }
 
-.control-input-list::before {
+.control-input:checked+.control-cards {
+    border: #000000 solid 1px;
+}
+
+.control-cards-list::before {
     content: url(../images/icons/mode-list-3.svg);
     width: 16px;
     height: 14px;
 }
 
+.control-input {
+    display: none;
+}
 
 .star::before {
     content: url(../images/icons/star.svg);
@@ -954,7 +1162,6 @@ footer {
     padding: 9px 20.5px 10px;
 }
 
-/* Здесь кнопка должна меняться на зеленую при нажатии, пока что оставлю так*/
 
 .product-card-button.favorites {
     font-family: "PT Sans", Arial, sans-serif;
@@ -1093,4 +1300,249 @@ footer {
     height: 55px;
 }
 
-/* Пока оставляю так, ибо нужно же было сделать только крупные блоки*/
+/* Modal-container */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 242, 242, 0.8);
+  }
+
+.modal-content {
+  margin-left: 50px;
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+
+.modal-auth {
+    width: 715px;
+    min-height: 561px;
+}
+
+.search-form-modal {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000000;
+    border: none;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 54px;
+    right: 70px;
+    width: 53px;
+    height: 53px;
+    background-color: #ffffff;
+    border: none;
+    background-image: url("../images/icons/close-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  } 
+
+  .modal-title {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+
+    .modal-date-input {
+        font-family: "PT Sans", Arial, sans-serif;
+        margin-bottom: 40px;
+        display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+.label-modal {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    align-self: flex-start;
+}
+
+ .date-entry{
+    width: 420px;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    border: none;
+ }
+
+
+ .date-departure {
+    width: 420px;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    border: none;
+}
+
+.modal-search {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    width: 575px;
+    height: 60px;
+    background: #83B3D3;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.helper-text-error {
+    color: #FF5757;
+}
+
+.chldren-info-icon {
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/info.svg);
+}
+
+
+.prompt {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: #FFFFFF;
+    width: 212px;
+    padding: 22px;
+    background: #333333;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative;
+    top: 7px;
+    right: 115.5px;
+}
+
+.prompt::before {
+    content: "";
+    display: block;
+    border: 9px transparent solid;
+    border-bottom: 9px #333333 solid;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.number-input-wrapper {
+    display: flex;
+    width: 133px;
+    height: 50px;
+}
+
+.input-wrapper input {
+    width: 33px;
+}
+
+.input-wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.input-wrapper>*{
+}
+
+.modal-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-input-button {
+    width: 50px;
+    border: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color:#000000;
+}
+
+.input-ppl-count {
+    text-align: center;
+}
+
+
+.children-label {
+    margin-left: 60px;
+    padding-right: 40px;
+}
+
+.children-input-info {
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+    height: 20px;
+    width: 100px;
+}
+
+.adults-label {
+    margin-right: 30px;
+}
+
+
+.modal-container-close {
+    display: none;
+}
+
+/* Я вообще не понимаю как сделать модальное окно, запуталась */
